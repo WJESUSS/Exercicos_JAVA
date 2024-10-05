@@ -8,11 +8,11 @@ public class equacaoSegundoGrau {
 		
 		Scanner sc =  new Scanner(System.in);
 		
-		System.out.println("Digite o numero A:");
+		System.out.println("Digite o numero da posição A:");
 		int A =sc.nextInt();
-		System.out.println("Digite o numero B :");
+		System.out.println("Digite o numero da posição B :");
 		int B = sc.nextInt();
-		System.out.println("Digite o numero C :");
+		System.out.println("Digite o numero da posição C :");
 		int C = sc.nextInt();
 		
 		int delta = B*B-4*A*C;
