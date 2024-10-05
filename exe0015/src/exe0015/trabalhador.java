@@ -11,7 +11,7 @@ public class trabalhador {
 		int dias=sc.nextInt();
 		
 		int horasDiaria = 8;
-		double valorHora =35;
+		double valorHora =25;
 		
 		double  salario =dias*horasDiaria*valorHora;
 		
