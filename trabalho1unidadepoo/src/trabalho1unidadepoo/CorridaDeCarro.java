@@ -35,7 +35,7 @@ public class CorridaDeCarro {
 			} else if (distancia2 > distancia1) {
 				System.out.println("Veículo 2 venceu!");
 			} else {
-				System.out.println("Empate!");
+				System.out.println("Empate!!");
 			}
 		} else if (distancia1 >= distanciaMaxima) {
 			System.out.println("Veículo 1 venceu!");
