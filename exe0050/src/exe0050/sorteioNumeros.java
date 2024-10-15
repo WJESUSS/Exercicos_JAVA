@@ -28,7 +28,7 @@ public class sorteioNumeros {
 			divisoresPorTres++;
 		}
 	
-		System.out.println("/nQuantidades de numero que estão acima de 5 =  "+acimaDeCinco);
+		System.out.println("Quantidades de numero que estão acima de 5 =  "+acimaDeCinco);
 		System.out.println("Quantidade de numeros divisivo por  3 = " +divisoresPorTres);
 	}
 
