@@ -5,7 +5,7 @@ public class AppCorrida {
 
 	public static void main(String[] args) {
 	
-		int distanciaMaxima = 100;
+		int distanciaMaxima = 20;
 		Carro c1 = new Carro();
 		Carro c2 = new Carro();
 		
@@ -31,13 +31,13 @@ public class AppCorrida {
 			if(c2.getDistancia()>=distanciaMaxima && c2.getDistancia()>c1.getDistancia()) {
 				System.out.println("Carro 2 Ganhou!");
 			} else {
-				//if(c1.getDistancia()>=distanciaMaxima && c1.getDistancia()>c2.getDistancia()) {
+				 if(c1.getDistancia()>=distanciaMaxima && c1.getDistancia()>c2.getDistancia()) {
 					System.out.println("Carro 1 Ganhou!");						
 				}
 			}
 		}
 		
-		
+	}
 	
 	
 	public static void rua(int distanciaM) {
