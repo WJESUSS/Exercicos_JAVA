@@ -8,7 +8,7 @@ public class doWhileFuncionario {
 
 		Scanner sc = new Scanner(System.in);
 	
-		double somaDosSalarios = 0 ;
+		double somaDosSalarios =0;
 		int continuar;
 		int sexo ;
 		double salario;
