@@ -8,24 +8,30 @@ public class while01 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int numeroSomado = 0;
-		int numero ;
+		float salarioHomem =0;
+		float salarioMulher = 0;
+		char continuar;
+		
 		
 		do {
-			System.out.println("Digite o numero (1111-para sair)");
-			numero = sc.nextInt();
+			System.out.println("Digite seu sexo M-MASCULINO,F-FEMENINO");
+			char sexo = sc.next().toUpperCase().charAt(0);
+			System.out.println("Digite seu salario:");
+			double salario = sc.nextFloat();
 			
-			if(numero!=1111) {
-				numeroSomado += numero;
+			if(sexo=='F') {
+				salarioMulher+=salario;
+			}else if(sexo =='M') {
+				salarioHomem+=salario;
 			}
+				System.out.println("Voce deseja continuar sim ou não ?");
+				continuar = sc.next().toUpperCase().charAt(0);
+		}while(continuar=='S');
 		
-		}while(numero!= 1111);
-			System.out.println("A soma dos numero :" +numeroSomado);
-	}
-}
+			System.out.println("O soma do salario das mulheres "+salarioMulher);
+			System.out.println("O soma do salario das homens "+salarioHomem);
 		
+		}
 	
 
-
-
-
+}
