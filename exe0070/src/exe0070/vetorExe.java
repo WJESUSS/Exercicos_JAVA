@@ -1,6 +1,6 @@
 package exe0070;
 
-import java.util.Iterator;
+
 import java.util.Scanner;
 
 public class vetorExe {
