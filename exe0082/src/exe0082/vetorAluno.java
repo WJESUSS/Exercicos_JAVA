@@ -37,7 +37,7 @@ public class vetorAluno {
 	     
 	     for (int i = 0; i < notaAluno.length; i++) {
 		if(notaAluno[i] == maiorNota) {
-			System.out.print(" Posiçao   "+i);
+			System.out.print(" Posiçao "+i);
 		}
 
 
