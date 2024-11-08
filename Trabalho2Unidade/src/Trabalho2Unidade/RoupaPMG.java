@@ -2,19 +2,24 @@ package Trabalho2Unidade;
 
 import java.util.Scanner;
 
-public class RoupaPMG extends Peca  {
+public class RoupaPMG extends Peca implements itens  {
     private int quantidadeP;
     private int quantidadeM;
     private int quantidadeG;
+   
 
     public RoupaPMG(String descricao, int quantidadeP, int quantidadeM, int quantidadeG, int estoqueMinimo, int estoqueMaximo) {
-        super(descricao, 0, estoqueMinimo, estoqueMaximo);
+        super(descricao,0, estoqueMinimo, estoqueMaximo);
         this.quantidadeP = quantidadeP;
         this.quantidadeM = quantidadeM;
         this.quantidadeG = quantidadeG;
     }
 
-    @Override
+    public void setQuantidadeEstoque(int quantidadeEstoque) {
+		this.quantidadeEstoque = quantidadeEstoque;
+	}
+
+	@Override
     public void venda() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Tamanho (P/M/G) da roupa (" + descricao + "): ");

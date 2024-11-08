@@ -2,17 +2,17 @@ package Trabalho2Unidade;
 
 import java.util.Scanner;
 
-public class SistemaControleEstoque {
+public class SistemaControleEstoque implements itens {
 
     public static void main(String[] args) {
         Peca[] itens = new Peca[5];
 
      
-        itens[0] = new Acessorio("Camisa", 30, 2, 15 );
+        itens[0] = new RoupaPMG("Camisa", 30, 2, 15,6,9);
         itens[1] = new RoupaTamanhoUnico("Saia", 15, 1, 10);
         itens[2] = new Acessorio("Cinto", 8, 3, 12);
         itens[3] = new Acessorio("Pulseira", 7, 2, 10);
-        itens[4] = new RoupaPMG("Saída de praia",3, 4, 5, 2, 10);
+        itens[4] = new Acessorio("Saída de praia",3, 4, 5);
 
         Scanner scanner = new Scanner(System.in);
         int opcao;
@@ -46,4 +46,15 @@ public class SistemaControleEstoque {
         }
         scanner.close();
     }
+
+	public void venda() {
+		
+		
+	}
+
+	@Override
+	public void reposicaoEstoque() {
+		
+		
+	}
 }
