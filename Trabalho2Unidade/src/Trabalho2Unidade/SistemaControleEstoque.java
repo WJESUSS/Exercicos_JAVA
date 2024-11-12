@@ -2,13 +2,13 @@ package Trabalho2Unidade;
 
 import java.util.Scanner;
 
-public class SistemaControleEstoque implements itens {
+public abstract class SistemaControleEstoque implements itens {
 
     public static void main(String[] args) {
         Peca[] itens = new Peca[5];
 
      
-        itens[0] = new RoupaPMG("Camisa", 30, 2, 15,6,9);
+        itens[0] = new RoupaPMG("Camisa", 20, 20, 20, 20, 20);
         itens[1] = new RoupaTamanhoUnico("Saia", 15, 1, 10);
         itens[2] = new Acessorio("Cinto", 8, 3, 12);
         itens[3] = new Acessorio("Pulseira", 7, 2, 10);
@@ -29,6 +29,8 @@ public class SistemaControleEstoque implements itens {
             if (opcao >= 0 && opcao < 5) {
                 itens[opcao].venda();
                 itens[opcao].reposicaoEstoque();
+               
+               
       
             } else if (opcao == 5) {
                 System.out.println("Saindo do sistema...");
@@ -47,14 +49,20 @@ public class SistemaControleEstoque implements itens {
         scanner.close();
     }
 
+	@Override
 	public void venda() {
-		
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void reposicaoEstoque() {
-		
+		// TODO Auto-generated method stub
 		
 	}
+
+
 }
+
+
+

@@ -16,6 +16,7 @@ public abstract class Peca {
     }
 
     public abstract void venda();
+   
 
     public String getDescricao() {
         return descricao;
@@ -38,5 +39,13 @@ public abstract class Peca {
             quantidadeEstoque = estoqueMaximo;
         }
     }
+
+	public void venda(int quantidade) {
+		
+		
+	}
+	
+
 }
 
+	

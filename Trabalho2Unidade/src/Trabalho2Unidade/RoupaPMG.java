@@ -9,7 +9,7 @@ public class RoupaPMG extends Peca implements itens  {
    
 
     public RoupaPMG(String descricao, int quantidadeP, int quantidadeM, int quantidadeG, int estoqueMinimo, int estoqueMaximo) {
-        super(descricao,0, estoqueMinimo, estoqueMaximo);
+        super(descricao,20, estoqueMinimo, estoqueMaximo);
         this.quantidadeP = quantidadeP;
         this.quantidadeM = quantidadeM;
         this.quantidadeG = quantidadeG;
@@ -28,8 +28,9 @@ public class RoupaPMG extends Peca implements itens  {
         switch (tamanho) {
             case "P":
                 if (quantidadeP > 0) {
-                    quantidadeP--;
-                    quantidadeVendida++;
+                  quantidadeP--;
+                 quantidadeVendida++;
+                   
                 } else {
                     System.out.println("Estoque insuficiente para tamanho P.");
                 }

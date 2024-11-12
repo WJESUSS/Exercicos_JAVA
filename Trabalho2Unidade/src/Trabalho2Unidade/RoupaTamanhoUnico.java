@@ -15,5 +15,7 @@ public class RoupaTamanhoUnico extends Peca implements itens {
             System.out.println("Estoque insuficiente.");
         }
     }
+
+
 }
 

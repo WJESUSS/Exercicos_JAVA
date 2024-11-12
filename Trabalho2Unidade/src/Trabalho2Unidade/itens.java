@@ -4,4 +4,5 @@ public interface itens {
 
 	public void venda();
 	public void reposicaoEstoque();
+
 }

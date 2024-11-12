@@ -13,11 +13,16 @@ public class Acessorio extends Peca {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Quantidade vendida do acessório (" + descricao + "): ");
         int quantidadeVendida = scanner.nextInt();
-        if (quantidadeVendida <= quantidadeEstoque) {
-            quantidadeEstoque -= quantidadeVendida;
-            this.quantidadeVendida += quantidadeVendida;
+        if (quantidadeVendida > quantidadeEstoque) {
+        	System.out.println("Quantidade vendida excede o estoque disponível.");
+          
         } else {
-            System.out.println("Quantidade vendida excede o estoque disponível.");
+        	setQuantidadeEstoque(quantidadeEstoque);
+        	reposicaoEstoque();
         }
+        
+        
+        
     }
+
 }
