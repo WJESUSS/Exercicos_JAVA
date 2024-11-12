@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module novo {
+	requires ProfessorCristiane;
+}
