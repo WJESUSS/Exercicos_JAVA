@@ -55,6 +55,7 @@ public class GerenciadorDeCarros {
 		String cor = scanner.nextLine();
 		System.out.print("Preço: ");
 		double preco = scanner.nextDouble();
+		
 
 		Carro carro = new Carro(cor, ano, cor, preco);
 		listaDeCarros.add(carro);
