@@ -14,7 +14,6 @@ public class Acessorio extends Peca implements Item{
         int quantidadeVendida = scanner.nextInt();
         if (quantidadeVendida <= getQuantidade()) {
             setQuantidade(getQuantidade() - quantidadeVendida);
-            contadorReposicao++;
         } else {
             System.out.println("Estoque insuficiente.");
         }
@@ -23,8 +22,9 @@ public class Acessorio extends Peca implements Item{
 	@Override
 	public void controleEstoque() {
 		System.out.println("Produto: " + this.descricao);
+	     
         System.out.println("Quantidade restante no estoque: " + this.quantidade);
-		
+        System.out.println("Vezes que o estoque foi reposto : " +this.getContadorReposicao());
 	}
 }
 

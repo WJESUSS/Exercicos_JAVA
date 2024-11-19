@@ -9,7 +9,6 @@ public class RoupaTamanhoUnico extends Peca implements Item {
     public void venda() {
         if (getQuantidade() > 0) {
             setQuantidade(getQuantidade() - 1);
-            contadorReposicao++;
         } else {
             System.out.println("Estoque insuficiente.");
         }
@@ -17,8 +16,10 @@ public class RoupaTamanhoUnico extends Peca implements Item {
 
 	@Override
 	public void controleEstoque() {
+	
 		System.out.println("Produto: " + this.descricao);
         System.out.println("Quantidade restante no estoque: " + this.quantidade);
+       
 		
 	}
 }

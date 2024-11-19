@@ -3,8 +3,8 @@ package Exercicioatualizado;
 public abstract class Peca implements Item {
     protected String descricao;
     protected int quantidade;
-    private int estoqueMinimo;
-    private int estoqueMaximo;
+    protected int estoqueMinimo;
+    protected int estoqueMaximo;
 	protected int contadorReposicao = 0;
 	private int controleEstoque;
 
@@ -19,8 +19,12 @@ public abstract class Peca implements Item {
     @Override
     public void reposicaoEstoque() {
         if (this.quantidade < this.estoqueMinimo) {
+        	System.out.println("Reposição necessária para : " + descricao);
             this.quantidade = this.estoqueMaximo;
+            System.out.println("Estoque de " + descricao + " renovado ao máximo (" + estoqueMaximo + ").");
             contadorReposicao++;
+            } else { 
+            	System.out.println("Estoque de " + descricao + " está acima do mínimo.");
         }
     }
     
@@ -52,8 +56,6 @@ public abstract class Peca implements Item {
 		return controleEstoque;
 	}
 
-	public void setControleEstoque(int controleEstoque) {
-		this.controleEstoque = controleEstoque;
-	}
+	
   }
     
