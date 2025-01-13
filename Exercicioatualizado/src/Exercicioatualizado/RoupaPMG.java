@@ -154,7 +154,6 @@ public class RoupaPMG extends Peca implements Item {
 		System.out.println("Quantidade de vez estoque tamanho foi renovado M : " +contadorReposicaoM);
 		System.out.println("Quantidade de vez estoque tamanho foi renovado G : " +contadorReposicaoG);
 
-		
 	}
 	
 }

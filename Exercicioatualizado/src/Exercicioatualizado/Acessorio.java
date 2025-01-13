@@ -21,6 +21,7 @@ public class Acessorio extends Peca implements Item{
 
 	@Override
 	public void controleEstoque() {
+		System.out.println("---------------------------------------");
 		System.out.println("Produto: " + this.descricao);
 	     
         System.out.println("Quantidade restante no estoque: " + this.quantidade);

@@ -6,7 +6,7 @@ public abstract class Peca implements Item {
     protected int estoqueMinimo;
     protected int estoqueMaximo;
 	protected int contadorReposicao = 0;
-	private int controleEstoque;
+	protected int controleEstoque;
 
     public Peca(String descricao, int quantidade, int estoqueMinimo, int estoqueMaximo) {
         this.descricao = descricao;

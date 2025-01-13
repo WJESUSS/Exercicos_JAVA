@@ -51,18 +51,15 @@ public class SistemaControleEstoque {
 				System.out.println("Reposições de estoque: P - " + roupa.getContadorReposicaoP() + ", M - "
 						+ roupa.getContadorReposicaoM() + ", G - " + roupa.getContadorReposicaoG() + "");
 			} else {
-                Peca peca = (Peca)item;
-             
+				Peca peca = (Peca) item;
+
 				System.out.println(item.getDescricao() + ": " + item.getQuantidade() + " unidades");
 				System.out.println("Reposições de estoque: " + item.getContadorReposicao());
 
 			}
-			
-	
+
 		}
 
 	}
-	
 
-	
 }
